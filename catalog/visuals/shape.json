@@ -1,0 +1,18 @@
+{
+  "visualType": "shape",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [],
+  "roles": {},
+  "roleCombinations": [],
+  "formattingObjects": [
+    "fill",
+    "glow",
+    "outline",
+    "rotation",
+    "shadow",
+    "shape",
+    "text"
+  ],
+  "sharedCapabilitiesWith": []
+}

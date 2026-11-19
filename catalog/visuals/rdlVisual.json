@@ -1,0 +1,32 @@
+{
+  "visualType": "rdlVisual",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [
+    "parameterValues"
+  ],
+  "roles": {
+    "parameterValues": {
+      "kind": "GroupingOrMeasure",
+      "displayName": "Parameters",
+      "description": "Add field to bind to RDL report parameters",
+      "required": false,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [
+    {
+      "parameterValues": {
+        "min": 0
+      }
+    }
+  ],
+  "formattingObjects": [
+    "autoFilter",
+    "export",
+    "parameterMapping",
+    "reportInfo",
+    "toolbar"
+  ],
+  "sharedCapabilitiesWith": []
+}

@@ -1,0 +1,14 @@
+{
+  "visualType": "image",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [],
+  "roles": {},
+  "roleCombinations": [],
+  "formattingObjects": [
+    "general",
+    "image",
+    "imageScaling"
+  ],
+  "sharedCapabilitiesWith": []
+}

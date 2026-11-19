@@ -1,0 +1,15 @@
+{
+  "visualType": "aiNarratives",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [],
+  "roles": {},
+  "roleCombinations": [],
+  "formattingObjects": [
+    "narrativeSelection",
+    "summary",
+    "text",
+    "userPrompt"
+  ],
+  "sharedCapabilitiesWith": []
+}

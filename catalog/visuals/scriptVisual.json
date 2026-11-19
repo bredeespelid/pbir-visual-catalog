@@ -1,0 +1,22 @@
+{
+  "visualType": "scriptVisual",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [
+    "Values"
+  ],
+  "roles": {
+    "Values": {
+      "kind": "GroupingOrMeasure",
+      "displayName": "Values",
+      "description": null,
+      "required": false,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [],
+  "formattingObjects": [
+    "script"
+  ],
+  "sharedCapabilitiesWith": []
+}

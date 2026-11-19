@@ -1,0 +1,436 @@
+{
+  "visualType": "scatterChart",
+  "deprecated": false,
+  "requiredRoles": [
+    "X",
+    "Y"
+  ],
+  "optionalRoles": [
+    "Category",
+    "Series",
+    "Size",
+    "Play",
+    "Tooltips"
+  ],
+  "roles": {
+    "Category": {
+      "kind": "Grouping",
+      "displayName": "Values",
+      "description": "A point is plotted for each value in this field",
+      "required": false,
+      "maxItems": 1
+    },
+    "Series": {
+      "kind": "Grouping",
+      "displayName": "Legend",
+      "description": "The categorical field to show for color",
+      "required": false,
+      "maxItems": 1
+    },
+    "X": {
+      "kind": "GroupingOrMeasure",
+      "displayName": "X Axis",
+      "description": "Values to place on the horizontal axis",
+      "required": true,
+      "maxItems": null
+    },
+    "Y": {
+      "kind": "GroupingOrMeasure",
+      "displayName": "Y Axis",
+      "description": "Values to place on the vertical axis",
+      "required": true,
+      "maxItems": 1,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "Size": {
+      "kind": "Measure",
+      "displayName": "Size",
+      "description": "The measure to use for relative bubble sizing",
+      "required": false,
+      "maxItems": 1,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "Play": {
+      "kind": "Grouping",
+      "displayName": "Play Axis",
+      "description": null,
+      "required": false,
+      "maxItems": 1
+    },
+    "Tooltips": {
+      "kind": "Measure",
+      "displayName": "Tooltips",
+      "description": "Add additional data fields that people can see in the tooltip when they hover on part of this visualization.",
+      "required": false,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1
+      },
+      "Y": {
+        "max": 1
+      },
+      "Size": {
+        "max": 0
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "min": 1,
+        "max": 1,
+        "kind": 0
+      },
+      "Y": {
+        "min": 1,
+        "max": 1,
+        "kind": 0
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "min": 1,
+        "kind": 0
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "min": 1,
+        "max": 1,
+        "kind": 0
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 0
+      },
+      "X": {
+        "max": 1
+      },
+      "Y": {
+        "max": 1
+      },
+      "Size": {
+        "max": 0
+      },
+      "Gradient": {
+        "max": 1
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 0
+      },
+      "X": {
+        "min": 1,
+        "max": 1,
+        "kind": 0
+      },
+      "Y": {
+        "min": 1,
+        "max": 1,
+        "kind": 0
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 1
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 0
+      },
+      "X": {
+        "min": 1,
+        "kind": 0
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 1
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 0
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "min": 1,
+        "max": 1,
+        "kind": 0
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 1
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 1
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 0
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 1
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 1
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Play": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "Category": {
+        "max": 1
+      },
+      "Series": {
+        "max": 0
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 0
+      },
+      "Gradient": {
+        "max": 1
+      },
+      "Play": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 1
+      },
+      "Series": {
+        "max": 0
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 1
+      },
+      "Play": {
+        "max": 0
+      }
+    }
+  ],
+  "formattingObjects": [
+    "bubbles",
+    "categoryAxis",
+    "categoryLabels",
+    "clustering",
+    "colorBorder",
+    "colorByCategory",
+    "currentFrameIndex",
+    "dataPoint",
+    "fillPoint",
+    "general",
+    "legend",
+    "markers",
+    "plotArea",
+    "plotAreaShading",
+    "ratioLine",
+    "referenceLine",
+    "trend",
+    "valueAxis",
+    "xAxisReferenceLine",
+    "y1AxisReferenceLine",
+    "zoom"
+  ],
+  "sharedCapabilitiesWith": []
+}

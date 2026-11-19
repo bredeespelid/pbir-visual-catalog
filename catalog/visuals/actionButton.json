@@ -1,0 +1,19 @@
+{
+  "visualType": "actionButton",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [],
+  "roles": {},
+  "roleCombinations": [],
+  "formattingObjects": [
+    "fill",
+    "glow",
+    "icon",
+    "outline",
+    "rotation",
+    "shadow",
+    "shape",
+    "text"
+  ],
+  "sharedCapabilitiesWith": []
+}

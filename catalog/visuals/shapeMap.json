@@ -1,0 +1,135 @@
+{
+  "visualType": "shapeMap",
+  "deprecated": false,
+  "requiredRoles": [
+    "Category"
+  ],
+  "optionalRoles": [
+    "Series",
+    "Value",
+    "Tooltips"
+  ],
+  "roles": {
+    "Category": {
+      "kind": "Grouping",
+      "displayName": "Location",
+      "description": "The locations to plot",
+      "required": true,
+      "maxItems": 1,
+      "preferredTypes": [
+        {
+          "geography": {
+            "address": true
+          }
+        },
+        {
+          "geography": {
+            "city": true
+          }
+        },
+        {
+          "geography": {
+            "continent": true
+          }
+        },
+        {
+          "geography": {
+            "country": true
+          }
+        },
+        {
+          "geography": {
+            "county": true
+          }
+        },
+        {
+          "geography": {
+            "place": true
+          }
+        },
+        {
+          "geography": {
+            "postalCode": true
+          }
+        },
+        {
+          "geography": {
+            "region": true
+          }
+        },
+        {
+          "geography": {
+            "stateOrProvince": true
+          }
+        }
+      ]
+    },
+    "Series": {
+      "kind": "Grouping",
+      "displayName": "Legend",
+      "description": "The categorical field to show for color",
+      "required": false,
+      "maxItems": 1
+    },
+    "Value": {
+      "kind": "Measure",
+      "displayName": "Color saturation",
+      "description": "The value used to determine saturation of the data points",
+      "required": false,
+      "maxItems": 1,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "Tooltips": {
+      "kind": "Measure",
+      "displayName": "Tooltips",
+      "description": "Add additional data fields that people can see in the tooltip when they hover on part of this visualization.",
+      "required": false,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [
+    {
+      "Category": {
+        "min": 0,
+        "max": 1
+      },
+      "Series": {
+        "min": 0,
+        "max": 1
+      },
+      "Value": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "Category": {
+        "min": 1,
+        "max": 1
+      },
+      "Series": {
+        "min": 1,
+        "max": 1
+      },
+      "Value": {
+        "max": 0
+      }
+    }
+  ],
+  "formattingObjects": [
+    "dataPoint",
+    "defaultColors",
+    "general",
+    "legend",
+    "shape",
+    "zoom"
+  ],
+  "sharedCapabilitiesWith": []
+}

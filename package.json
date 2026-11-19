@@ -1,0 +1,17 @@
+{
+  "name": "pbir-visual-catalog",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Machine-readable catalog of Power BI (PBIR) visuals, generated from Microsoft's official packages.",
+  "license": "MIT",
+  "engines": { "node": ">=20.10.0" },
+  "scripts": {
+    "catalog:build": "python3 scripts/export_visual_catalog.py",
+    "catalog:check": "python3 scripts/check_catalog.py",
+    "examples:validate": "python3 scripts/validate_report.py"
+  },
+  "dependencies": {
+    "@microsoft/powerbi-core-visual-schema": "0.1.3",
+    "@microsoft/powerbi-report-authoring-cli": "0.5.0"
+  }
+}

@@ -1,0 +1,26 @@
+table Sales
+	lineageTag: 0b1c2d3e-0001-4000-8000-000000000001
+
+	column Region
+		dataType: string
+		lineageTag: 0b1c2d3e-0001-4000-8000-000000000002
+		summarizeBy: none
+		sourceColumn: Region
+
+	column Amount
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b1c2d3e-0001-4000-8000-000000000003
+		summarizeBy: sum
+		sourceColumn: Amount
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    Source = #table(
+				        type table [Region = text, Amount = Int64.Type],
+				        {{"North", 120}, {"South", 80}, {"East", 150}, {"West", 95}}
+				    )
+				in
+				    Source

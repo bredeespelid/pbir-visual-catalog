@@ -1,0 +1,38 @@
+{
+  "visualType": "accessibleTable",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [
+    "Rows",
+    "Columns",
+    "Values"
+  ],
+  "roles": {
+    "Rows": {
+      "kind": "Grouping",
+      "displayName": "Rows",
+      "description": "The fields to use on rows",
+      "required": false,
+      "maxItems": null
+    },
+    "Columns": {
+      "kind": "Grouping",
+      "displayName": "Columns",
+      "description": "The fields to use on columns",
+      "required": false,
+      "maxItems": null
+    },
+    "Values": {
+      "kind": "Measure",
+      "displayName": "Values",
+      "description": null,
+      "required": false,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [],
+  "formattingObjects": [
+    "general"
+  ],
+  "sharedCapabilitiesWith": []
+}

@@ -1,0 +1,80 @@
+{
+  "visualType": "realTimeLineChart",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [
+    "Category",
+    "Series",
+    "Y"
+  ],
+  "roles": {
+    "Category": {
+      "kind": "Grouping",
+      "displayName": "Axis",
+      "description": "Fields to place on the horizontal or vertical axis",
+      "required": false,
+      "maxItems": 1,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "dateTime": true
+        }
+      ]
+    },
+    "Series": {
+      "kind": "Grouping",
+      "displayName": "Legend",
+      "description": "The categorical field to show for color",
+      "required": false,
+      "maxItems": 1
+    },
+    "Y": {
+      "kind": "Measure",
+      "displayName": "Values",
+      "description": "The numeric amounts to plot",
+      "required": false,
+      "maxItems": null,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    }
+  },
+  "roleCombinations": [
+    {
+      "Category": {
+        "max": 1
+      },
+      "Series": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 1
+      },
+      "Series": {
+        "min": 1,
+        "max": 1
+      },
+      "Y": {
+        "max": 1
+      }
+    }
+  ],
+  "formattingObjects": [
+    "categoryAxis",
+    "dataPoint",
+    "general",
+    "legend",
+    "plotArea",
+    "valueAxis"
+  ],
+  "sharedCapabilitiesWith": []
+}
