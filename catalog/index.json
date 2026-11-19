@@ -1,0 +1,672 @@
+{
+  "generatedAt": "2026-11-19T11:54:13Z",
+  "contentSha256": "77333a264fc7a3d478dd45f4fc0fb091cb3464f8031a12c0f6d34058bd0f8b87",
+  "formatVersion": 1,
+  "sources": {
+    "@microsoft/powerbi-report-authoring-cli": {
+      "version": "0.5.0",
+      "license": "MIT"
+    },
+    "@microsoft/powerbi-core-visual-schema": {
+      "version": "0.1.3",
+      "license": "MIT"
+    }
+  },
+  "visualTypeCount": 57,
+  "skipped": [
+    {
+      "capabilityKey": "ganttChart",
+      "reason": "Present in capabilities.json but unknown to the authoring CLI"
+    }
+  ],
+  "visuals": [
+    {
+      "visualType": "accessibleTable",
+      "file": "visuals/accessibleTable.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": [
+        "Rows",
+        "Columns",
+        "Values"
+      ]
+    },
+    {
+      "visualType": "actionButton",
+      "file": "visuals/actionButton.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "advancedSlicerVisual",
+      "file": "visuals/advancedSlicerVisual.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": [
+        "Label",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "aiNarratives",
+      "file": "visuals/aiNarratives.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "animatedNumber",
+      "file": "visuals/animatedNumber.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "areaChart",
+      "file": "visuals/areaChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Y2",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "azureMap",
+      "file": "visuals/azureMap.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category"
+      ],
+      "optionalRoles": [
+        "Y",
+        "X",
+        "Series",
+        "Size",
+        "Tooltips",
+        "PathID",
+        "PointOrder"
+      ]
+    },
+    {
+      "visualType": "barChart",
+      "file": "visuals/barChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "basicShape",
+      "file": "visuals/basicShape.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "bookmarkNavigator",
+      "file": "visuals/bookmarkNavigator.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "card",
+      "file": "visuals/card.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "cardVisual",
+      "file": "visuals/cardVisual.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Data"
+      ],
+      "optionalRoles": [
+        "Rows",
+        "Tooltips",
+        "TrendVisualCategory"
+      ]
+    },
+    {
+      "visualType": "clusteredBarChart",
+      "file": "visuals/clusteredBarChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "clusteredColumnChart",
+      "file": "visuals/clusteredColumnChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "columnChart",
+      "file": "visuals/columnChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "dataQueryVisual",
+      "file": "visuals/dataQueryVisual.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": [
+        "Values"
+      ]
+    },
+    {
+      "visualType": "decompositionTreeVisual",
+      "file": "visuals/decompositionTreeVisual.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Analyze"
+      ],
+      "optionalRoles": [
+        "ExplainBy",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "donutChart",
+      "file": "visuals/donutChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "filledMap",
+      "file": "visuals/filledMap.json",
+      "deprecated": true,
+      "alternative": "azureMap",
+      "requiredRoles": [
+        "Category"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Y",
+        "X",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "filterSlicer",
+      "file": "visuals/filterSlicer.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "funnel",
+      "file": "visuals/funnel.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "gauge",
+      "file": "visuals/gauge.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Y"
+      ],
+      "optionalRoles": [
+        "MinValue",
+        "MaxValue",
+        "TargetValue",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "heatMap",
+      "file": "visuals/heatMap.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": [
+        "Category",
+        "Series",
+        "Y",
+        "X",
+        "Size",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "hundredPercentStackedAreaChart",
+      "file": "visuals/hundredPercentStackedAreaChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "hundredPercentStackedBarChart",
+      "file": "visuals/hundredPercentStackedBarChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Y"
+      ],
+      "optionalRoles": [
+        "Category",
+        "Series",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "hundredPercentStackedColumnChart",
+      "file": "visuals/hundredPercentStackedColumnChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "image",
+      "file": "visuals/image.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "keyDriversVisual",
+      "file": "visuals/keyDriversVisual.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": [
+        "Target",
+        "ExplainBy",
+        "Details"
+      ]
+    },
+    {
+      "visualType": "kpi",
+      "file": "visuals/kpi.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Indicator"
+      ],
+      "optionalRoles": [
+        "TrendLine",
+        "Goal"
+      ]
+    },
+    {
+      "visualType": "lineChart",
+      "file": "visuals/lineChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Y2",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "lineClusteredColumnComboChart",
+      "file": "visuals/lineClusteredColumnComboChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Y",
+        "Y2",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "lineStackedColumnComboChart",
+      "file": "visuals/lineStackedColumnComboChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Y",
+        "Y2",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "listSlicer",
+      "file": "visuals/listSlicer.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": [
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "map",
+      "file": "visuals/map.json",
+      "deprecated": true,
+      "alternative": "azureMap",
+      "requiredRoles": [
+        "Category"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Y",
+        "X",
+        "Size",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "matrix",
+      "file": "visuals/matrix.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": [
+        "Rows",
+        "Columns"
+      ]
+    },
+    {
+      "visualType": "multiRowCard",
+      "file": "visuals/multiRowCard.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "pageNavigator",
+      "file": "visuals/pageNavigator.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "pieChart",
+      "file": "visuals/pieChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "pivotTable",
+      "file": "visuals/pivotTable.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": [
+        "Rows",
+        "Columns"
+      ]
+    },
+    {
+      "visualType": "pythonVisual",
+      "file": "visuals/pythonVisual.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": [
+        "Values"
+      ]
+    },
+    {
+      "visualType": "qnaVisual",
+      "file": "visuals/qnaVisual.json",
+      "deprecated": true,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "rdlVisual",
+      "file": "visuals/rdlVisual.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": [
+        "parameterValues"
+      ]
+    },
+    {
+      "visualType": "realTimeLineChart",
+      "file": "visuals/realTimeLineChart.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": [
+        "Category",
+        "Series",
+        "Y"
+      ]
+    },
+    {
+      "visualType": "ribbonChart",
+      "file": "visuals/ribbonChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "scatterChart",
+      "file": "visuals/scatterChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "X",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Category",
+        "Series",
+        "Size",
+        "Play",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "scorecard",
+      "file": "visuals/scorecard.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "scriptVisual",
+      "file": "visuals/scriptVisual.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": [
+        "Values"
+      ]
+    },
+    {
+      "visualType": "shape",
+      "file": "visuals/shape.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "shapeMap",
+      "file": "visuals/shapeMap.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Value",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "slicer",
+      "file": "visuals/slicer.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "stackedAreaChart",
+      "file": "visuals/stackedAreaChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Series",
+        "Rows",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "table",
+      "file": "visuals/table.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "tableEx",
+      "file": "visuals/tableEx.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "textSlicer",
+      "file": "visuals/textSlicer.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "textbox",
+      "file": "visuals/textbox.json",
+      "deprecated": false,
+      "requiredRoles": [],
+      "optionalRoles": []
+    },
+    {
+      "visualType": "treemap",
+      "file": "visuals/treemap.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Values"
+      ],
+      "optionalRoles": [
+        "Group",
+        "Details",
+        "Tooltips"
+      ]
+    },
+    {
+      "visualType": "waterfallChart",
+      "file": "visuals/waterfallChart.json",
+      "deprecated": false,
+      "requiredRoles": [
+        "Category",
+        "Y"
+      ],
+      "optionalRoles": [
+        "Breakdown",
+        "Tooltips"
+      ]
+    }
+  ]
+}

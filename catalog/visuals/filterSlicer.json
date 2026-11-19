@@ -1,0 +1,52 @@
+{
+  "visualType": "filterSlicer",
+  "deprecated": false,
+  "requiredRoles": [
+    "Values"
+  ],
+  "optionalRoles": [],
+  "roles": {
+    "Values": {
+      "kind": "Grouping",
+      "displayName": "Field",
+      "description": "The field to display",
+      "required": true,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [
+    {
+      "Values": {
+        "min": 2,
+        "areHierarchicallyRelated": true,
+        "multiTableTupleFiltersSupported": true,
+        "suppressDrill": true
+      }
+    },
+    {
+      "Values": {
+        "max": 1,
+        "suppressDrill": true
+      }
+    }
+  ],
+  "formattingObjects": [
+    "calendarButton",
+    "data",
+    "date",
+    "dateRange",
+    "dateRangeText",
+    "dropdown",
+    "general",
+    "header",
+    "items",
+    "numericInputStyle",
+    "pendingChangesIcon",
+    "relativeText",
+    "searchBox",
+    "selection",
+    "selectionIcon",
+    "slider"
+  ],
+  "sharedCapabilitiesWith": []
+}

@@ -1,0 +1,12 @@
+{
+  "visualType": "animatedNumber",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [],
+  "roles": {},
+  "roleCombinations": [],
+  "formattingObjects": [
+    "general"
+  ],
+  "sharedCapabilitiesWith": []
+}

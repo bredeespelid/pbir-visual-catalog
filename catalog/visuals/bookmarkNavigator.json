@@ -1,0 +1,21 @@
+{
+  "visualType": "bookmarkNavigator",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [],
+  "roles": {},
+  "roleCombinations": [],
+  "formattingObjects": [
+    "accentBar",
+    "bookmarks",
+    "fill",
+    "glow",
+    "layout",
+    "outline",
+    "rotation",
+    "shadow",
+    "shape",
+    "text"
+  ],
+  "sharedCapabilitiesWith": []
+}

@@ -1,0 +1,28 @@
+{
+  "visualType": "table",
+  "deprecated": false,
+  "requiredRoles": [
+    "Values"
+  ],
+  "optionalRoles": [],
+  "roles": {
+    "Values": {
+      "kind": "GroupingOrMeasure",
+      "displayName": "Columns",
+      "description": null,
+      "required": true,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [],
+  "formattingObjects": [
+    "clustering",
+    "columnFormatting",
+    "columnHeaders",
+    "general",
+    "grid",
+    "total",
+    "values"
+  ],
+  "sharedCapabilitiesWith": []
+}

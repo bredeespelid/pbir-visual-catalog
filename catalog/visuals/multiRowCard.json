@@ -1,0 +1,26 @@
+{
+  "visualType": "multiRowCard",
+  "deprecated": false,
+  "requiredRoles": [
+    "Values"
+  ],
+  "optionalRoles": [],
+  "roles": {
+    "Values": {
+      "kind": "GroupingOrMeasure",
+      "displayName": "Fields",
+      "description": "The fields to display",
+      "required": true,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [],
+  "formattingObjects": [
+    "card",
+    "cardTitle",
+    "categoryLabels",
+    "dataLabels",
+    "general"
+  ],
+  "sharedCapabilitiesWith": []
+}

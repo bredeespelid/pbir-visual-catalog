@@ -1,0 +1,21 @@
+{
+  "visualType": "pageNavigator",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [],
+  "roles": {},
+  "roleCombinations": [],
+  "formattingObjects": [
+    "accentBar",
+    "fill",
+    "glow",
+    "layout",
+    "outline",
+    "pages",
+    "rotation",
+    "shadow",
+    "shape",
+    "text"
+  ],
+  "sharedCapabilitiesWith": []
+}

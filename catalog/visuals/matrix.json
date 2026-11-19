@@ -1,0 +1,80 @@
+{
+  "visualType": "matrix",
+  "deprecated": false,
+  "requiredRoles": [
+    "Values"
+  ],
+  "optionalRoles": [
+    "Rows",
+    "Columns"
+  ],
+  "roles": {
+    "Rows": {
+      "kind": "Grouping",
+      "displayName": "Rows",
+      "description": "The fields to use on rows",
+      "required": false,
+      "maxItems": null
+    },
+    "Columns": {
+      "kind": "Grouping",
+      "displayName": "Columns",
+      "description": "The fields to use on columns",
+      "required": false,
+      "maxItems": null
+    },
+    "Values": {
+      "kind": "Measure",
+      "displayName": "Values",
+      "description": null,
+      "required": true,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [
+    {
+      "Rows": {
+        "max": 0
+      },
+      "Columns": {
+        "max": 0
+      },
+      "Values": {
+        "min": 1
+      }
+    },
+    {
+      "Rows": {
+        "min": 1
+      },
+      "Columns": {
+        "min": 0
+      },
+      "Values": {
+        "min": 0
+      }
+    },
+    {
+      "Rows": {
+        "min": 0
+      },
+      "Columns": {
+        "min": 1
+      },
+      "Values": {
+        "min": 0
+      }
+    }
+  ],
+  "formattingObjects": [
+    "columnFormatting",
+    "columnHeaders",
+    "general",
+    "grid",
+    "rowHeaders",
+    "subTotals",
+    "total",
+    "values"
+  ],
+  "sharedCapabilitiesWith": []
+}

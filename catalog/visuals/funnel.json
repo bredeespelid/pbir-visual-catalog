@@ -1,0 +1,71 @@
+{
+  "visualType": "funnel",
+  "deprecated": false,
+  "requiredRoles": [
+    "Category",
+    "Y"
+  ],
+  "optionalRoles": [
+    "Tooltips"
+  ],
+  "roles": {
+    "Category": {
+      "kind": "Grouping",
+      "displayName": "Category",
+      "description": "Each field is a stage in the funnel",
+      "required": true,
+      "maxItems": 1
+    },
+    "Y": {
+      "kind": "Measure",
+      "displayName": "Values",
+      "description": "The numeric amounts to plot",
+      "required": true,
+      "maxItems": null,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "Tooltips": {
+      "kind": "Measure",
+      "displayName": "Tooltips",
+      "description": "Add additional data fields that people can see in the tooltip when they hover on part of this visualization.",
+      "required": false,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [
+    {
+      "Category": {
+        "max": 0
+      },
+      "Gradient": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 1
+      },
+      "Y": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 1
+      }
+    }
+  ],
+  "formattingObjects": [
+    "categoryAxis",
+    "dataPoint",
+    "general",
+    "labels",
+    "percentBarLabel"
+  ],
+  "sharedCapabilitiesWith": []
+}

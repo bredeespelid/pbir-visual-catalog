@@ -1,0 +1,31 @@
+{
+  "visualType": "card",
+  "deprecated": false,
+  "requiredRoles": [
+    "Values"
+  ],
+  "optionalRoles": [],
+  "roles": {
+    "Values": {
+      "kind": "Measure",
+      "displayName": "Fields",
+      "description": "The fields to display",
+      "required": true,
+      "maxItems": 1
+    }
+  },
+  "roleCombinations": [
+    {
+      "Values": {
+        "max": 1
+      }
+    }
+  ],
+  "formattingObjects": [
+    "categoryLabels",
+    "general",
+    "labels",
+    "wordWrap"
+  ],
+  "sharedCapabilitiesWith": []
+}

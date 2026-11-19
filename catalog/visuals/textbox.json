@@ -1,0 +1,14 @@
+{
+  "visualType": "textbox",
+  "deprecated": false,
+  "requiredRoles": [],
+  "optionalRoles": [],
+  "roles": {},
+  "roleCombinations": [],
+  "formattingObjects": [
+    "general",
+    "text",
+    "values"
+  ],
+  "sharedCapabilitiesWith": []
+}

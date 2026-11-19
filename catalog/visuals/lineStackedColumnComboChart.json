@@ -1,0 +1,165 @@
+{
+  "visualType": "lineStackedColumnComboChart",
+  "deprecated": false,
+  "requiredRoles": [
+    "Category"
+  ],
+  "optionalRoles": [
+    "Series",
+    "Y",
+    "Y2",
+    "Rows",
+    "Tooltips"
+  ],
+  "roles": {
+    "Category": {
+      "kind": "Grouping",
+      "displayName": "X-axis",
+      "description": "Fields to place on the horizontal axis",
+      "required": true,
+      "maxItems": null
+    },
+    "Series": {
+      "kind": "Grouping",
+      "displayName": "Column legend",
+      "description": null,
+      "required": false,
+      "maxItems": 1
+    },
+    "Y": {
+      "kind": "Measure",
+      "displayName": "Column y-axis",
+      "description": "The values to plot as columns",
+      "required": false,
+      "maxItems": null,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "Y2": {
+      "kind": "Measure",
+      "displayName": "Line y-axis",
+      "description": "The values to plot as lines",
+      "required": false,
+      "maxItems": null,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "Rows": {
+      "kind": "Grouping",
+      "displayName": "Small multiples",
+      "description": "Split your visual into multiple, smaller visuals based on your selected fields",
+      "required": false,
+      "maxItems": null
+    },
+    "Tooltips": {
+      "kind": "Measure",
+      "displayName": "Tooltips",
+      "description": "Add additional data fields that people can see in the tooltip when they hover on part of this visualization.",
+      "required": false,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [
+    {
+      "Series": {
+        "max": 0
+      },
+      "Y2": {
+        "min": 1
+      },
+      "Rows": {
+        "max": 0
+      }
+    },
+    {
+      "Series": {
+        "max": 0
+      },
+      "Rows": {
+        "max": 0
+      }
+    },
+    {
+      "Series": {
+        "min": 1,
+        "max": 1
+      },
+      "Y": {
+        "max": 1
+      },
+      "Y2": {
+        "min": 1
+      },
+      "Rows": {
+        "max": 0
+      }
+    },
+    {
+      "Series": {
+        "min": 1,
+        "max": 1
+      },
+      "Y": {
+        "max": 1
+      },
+      "Rows": {
+        "max": 0
+      }
+    },
+    {
+      "Series": {
+        "max": 0
+      },
+      "Rows": {
+        "min": 1
+      }
+    },
+    {
+      "Series": {
+        "min": 1,
+        "max": 1
+      },
+      "Y": {
+        "max": 1
+      },
+      "Rows": {
+        "min": 1
+      }
+    }
+  ],
+  "formattingObjects": [
+    "annotationTemplate",
+    "categoryAxis",
+    "dataPoint",
+    "error",
+    "filters",
+    "general",
+    "labels",
+    "layout",
+    "legend",
+    "lineStyles",
+    "markers",
+    "plotArea",
+    "seriesLabels",
+    "smallMultiplesLayout",
+    "subheader",
+    "totals",
+    "valueAxis",
+    "xAxisReferenceLine",
+    "y1AxisReferenceLine",
+    "zoom"
+  ],
+  "sharedCapabilitiesWith": []
+}

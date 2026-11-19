@@ -1,0 +1,352 @@
+{
+  "visualType": "map",
+  "deprecated": true,
+  "alternative": "azureMap",
+  "deprecationReason": "Legacy Bing Maps visual - replaced by Azure Maps",
+  "requiredRoles": [
+    "Category"
+  ],
+  "optionalRoles": [
+    "Series",
+    "Y",
+    "X",
+    "Size",
+    "Tooltips"
+  ],
+  "roles": {
+    "Category": {
+      "kind": "Grouping",
+      "displayName": "Location",
+      "description": "The locations to plot",
+      "required": true,
+      "maxItems": null,
+      "preferredTypes": [
+        {
+          "geography": {
+            "address": true
+          }
+        },
+        {
+          "geography": {
+            "city": true
+          }
+        },
+        {
+          "geography": {
+            "continent": true
+          }
+        },
+        {
+          "geography": {
+            "country": true
+          }
+        },
+        {
+          "geography": {
+            "county": true
+          }
+        },
+        {
+          "geography": {
+            "place": true
+          }
+        },
+        {
+          "geography": {
+            "postalCode": true
+          }
+        },
+        {
+          "geography": {
+            "region": true
+          }
+        },
+        {
+          "geography": {
+            "stateOrProvince": true
+          }
+        }
+      ]
+    },
+    "Series": {
+      "kind": "Grouping",
+      "displayName": "Legend",
+      "description": "The categorical field to show for color",
+      "required": false,
+      "maxItems": 1
+    },
+    "Y": {
+      "kind": "GroupingOrMeasure",
+      "displayName": "Latitude",
+      "description": "Use to override the latitude of locations",
+      "required": false,
+      "maxItems": 1,
+      "preferredTypes": [
+        {
+          "geography": {
+            "latitude": true
+          }
+        }
+      ]
+    },
+    "X": {
+      "kind": "GroupingOrMeasure",
+      "displayName": "Longitude",
+      "description": "Use to override the longitude of locations",
+      "required": false,
+      "maxItems": 1,
+      "preferredTypes": [
+        {
+          "geography": {
+            "longitude": true
+          }
+        }
+      ]
+    },
+    "Size": {
+      "kind": "Measure",
+      "displayName": "Bubble size",
+      "description": "The measure to use for relative bubble sizing",
+      "required": false,
+      "maxItems": 1,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "Tooltips": {
+      "kind": "Measure",
+      "displayName": "Tooltips",
+      "description": "Add additional data fields that people can see in the tooltip when they hover on part of this visualization.",
+      "required": false,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 1,
+        "min": 1
+      },
+      "X": {
+        "max": 1,
+        "kind": 0
+      },
+      "Y": {
+        "max": 1,
+        "kind": 0
+      },
+      "Size": {
+        "max": 0
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Tooltips": {}
+    },
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1,
+        "kind": 0
+      },
+      "Y": {
+        "max": 1,
+        "kind": 0
+      },
+      "Size": {
+        "max": 1,
+        "min": 1
+      },
+      "Gradient": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "max": 0
+      },
+      "Series": {
+        "max": 0
+      },
+      "X": {
+        "max": 1,
+        "kind": 0
+      },
+      "Y": {
+        "max": 1,
+        "kind": 0
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 1
+      }
+    },
+    {
+      "Category": {
+        "max": 1,
+        "min": 1
+      },
+      "Series": {
+        "max": 1,
+        "min": 1
+      },
+      "X": {
+        "max": 0
+      },
+      "Y": {
+        "max": 0
+      },
+      "Size": {
+        "max": 0
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Tooltips": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "min": 1
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1,
+        "min": 1
+      },
+      "Gradient": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "min": 1
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 0
+      },
+      "Tooltips": {
+        "min": 1
+      }
+    },
+    {
+      "Category": {
+        "min": 1
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1,
+        "min": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "min": 1
+      },
+      "Series": {
+        "max": 1
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "min": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 0
+      }
+    },
+    {
+      "Category": {
+        "min": 1
+      },
+      "Series": {
+        "max": 0
+      },
+      "X": {
+        "max": 1,
+        "kind": 1
+      },
+      "Y": {
+        "max": 1,
+        "kind": 1
+      },
+      "Size": {
+        "max": 1
+      },
+      "Gradient": {
+        "max": 1
+      }
+    }
+  ],
+  "formattingObjects": [
+    "bubbles",
+    "categoryLabels",
+    "dataPoint",
+    "general",
+    "heatMap",
+    "legend",
+    "mapControls",
+    "mapStyles"
+  ],
+  "sharedCapabilitiesWith": []
+}

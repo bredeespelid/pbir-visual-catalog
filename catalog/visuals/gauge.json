@@ -1,0 +1,107 @@
+{
+  "visualType": "gauge",
+  "deprecated": false,
+  "requiredRoles": [
+    "Y"
+  ],
+  "optionalRoles": [
+    "MinValue",
+    "MaxValue",
+    "TargetValue",
+    "Tooltips"
+  ],
+  "roles": {
+    "Y": {
+      "kind": "Measure",
+      "displayName": "Value",
+      "description": "The numeric amount to plot, also shown as digits in the middle of the visual",
+      "required": true,
+      "maxItems": 1,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "MinValue": {
+      "kind": "Measure",
+      "displayName": "Minimum value",
+      "description": "The value used for the start of the scale",
+      "required": false,
+      "maxItems": 1,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "MaxValue": {
+      "kind": "Measure",
+      "displayName": "Maximum value",
+      "description": "The value used for the end of the scale",
+      "required": false,
+      "maxItems": 1,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "TargetValue": {
+      "kind": "Measure",
+      "displayName": "Target value",
+      "description": "The value used for the goal indicator",
+      "required": false,
+      "maxItems": 1,
+      "requiredTypes": [
+        {
+          "numeric": true
+        },
+        {
+          "integer": true
+        }
+      ]
+    },
+    "Tooltips": {
+      "kind": "Measure",
+      "displayName": "Tooltips",
+      "description": "Add additional data fields that people can see in the tooltip when they hover on part of this visualization.",
+      "required": false,
+      "maxItems": null
+    }
+  },
+  "roleCombinations": [
+    {
+      "Y": {
+        "max": 1
+      },
+      "MinValue": {
+        "max": 1
+      },
+      "MaxValue": {
+        "max": 1
+      },
+      "TargetValue": {
+        "max": 1
+      }
+    }
+  ],
+  "formattingObjects": [
+    "axis",
+    "calloutValue",
+    "dataPoint",
+    "general",
+    "labels",
+    "target"
+  ],
+  "sharedCapabilitiesWith": []
+}
