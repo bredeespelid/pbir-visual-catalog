@@ -8,6 +8,7 @@ guessing role names, field limits or formatting objects.
   max fields per role, type requirements, allowed role combinations, formatting objects, deprecation info.
 - `catalog/index.json` - all types plus the exact source package versions and generation timestamp.
 - `examples/minimal-report` - a small PBIP project (card, slicer, bar chart) built from the catalog.
+- `docs/choosing-a-visual.md` - which visual fits which goal (hand-written guidance, checked against the catalog).
 - `AGENTS.md` - instructions that tell an agent how to look up a visual and write a valid `visual.json`.
 
 > **Generated content.** Everything in `catalog/` is generated from Microsoft's official, MIT-licensed npm packages,

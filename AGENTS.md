@@ -13,9 +13,11 @@ packages. **Never guess a role name, a role limit or a formatting object: look i
 
 ## How to look a visual up
 
+0. **Decide what the user wants to achieve** (the question, the audience, the available fields) and pick the visual from
+   [docs/choosing-a-visual.md](docs/choosing-a-visual.md). That page is hand-written guidance; the catalog below is the
+   authority on what a visual accepts. If the request is vague, ask or state your assumption.
 1. **Find the type.** Read `catalog/index.json` (`visuals[]`: `visualType`, `requiredRoles`, `optionalRoles`,
-   `deprecated`), or run `python3 scripts/visual_brief.py --list`. Pick the type that matches the request
-   (e.g. ranking by category -> `barChart`/`clusteredBarChart`; single number -> `card`; filter -> `slicer`).
+   `deprecated`), or run `python3 scripts/visual_brief.py --list`.
 2. **Read its brief.** `python3 scripts/visual_brief.py barChart` prints roles, limits and allowed combinations;
    the full data is in `catalog/visuals/barChart.json`.
 3. **Fill the roles** (`roles.<Role>` in the visual file):
@@ -94,6 +96,7 @@ Field shapes (all validated against Microsoft's schema in this repo's example):
 | Validate offline (skips remote schemas; local only) | `python3 scripts/validate_report.py --offline <report>.Report` |
 | Regenerate the catalog | `npm ci && npm run catalog:build` |
 | Check the catalog is current | `npm run catalog:check` |
+| Check the visual-choice guide only names valid types | `python3 scripts/check_docs.py` |
 
 ## Limits
 

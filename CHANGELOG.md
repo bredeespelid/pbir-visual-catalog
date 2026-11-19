@@ -7,6 +7,9 @@ Dependabot bumps are recorded in the git history (`chore(catalog): ...`) and in
 
 ## [Unreleased]
 
+### Added
+- `docs/choosing-a-visual.md`: goal-to-visual guidance, validated against the catalog by `scripts/check_docs.py` (run in CI); `AGENTS.md` step 0 points to it.
+
 ## [0.1.0] - 2026-11-19
 
 ### Added

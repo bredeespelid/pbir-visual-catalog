@@ -37,6 +37,9 @@ jobs:
       - name: Catalog is up to date
         run: python3 scripts/check_catalog.py
 
+      - name: Visual-choice guide references valid visual types
+        run: python3 scripts/check_docs.py
+
       # Fails on schema errors AND on skipped (unreachable) schemas, so this
       # check can never pass without actually validating.
       - name: Examples validate against PBIR schemas and the catalog
